@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
 //This is the Project for Vending Machine
 //Make it modular and warning free
-module seg_7(
-    input clk,
-	 input r1,r2,r5,reset,
-    output reg [7:0] seg,
-    output reg [7:0] digit2,
-    output reg [7:0] digit0,
-    output reg led_M5,led_M11,led_P7,
-	 output reg [3:0] an,
-	 output reg [3:0]bcd,
-	 output reg [1:0]refresh_counter = 0
+module top(
+	input clk,
+	input r1,r2,r5,reset,
+	output reg [7:0] seg,
+	output reg [7:0] digit2,
+	output reg [7:0] digit0,
+	output reg led_M5,led_M11,led_P7,
+	output reg [3:0] an,
+	output reg [3:0]bcd,
+	output reg [1:0]refresh_counter = 0
 	 );
 //output reg divided_clock = 0,
 //output reg divided_clock1 = 0
